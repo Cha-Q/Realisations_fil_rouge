@@ -1,0 +1,262 @@
+/* ---^---^--------------------------------------------------------------------*/
+/* ---*---*------------Font utilisés sur le site -----------------------------*/
+/* -----()----- ----------------------------------------- -------------------*/
+
+
+
+@font-face {
+    font-family: "coolvetica rg" ;
+    src: url(./Polices/coolvetica\ rg.ttf) format("truetype");
+}
+
+
+/* ---^---^--------------------------------------------------------------------*/
+/* ---*---*------------Mise en forme de la page1 -----------------------------*/
+/* -----()----- ----------------------------------------- -------------------*/
+
+
+html{
+    margin:0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    background: radial-gradient(at 50% 25%, #a970ff, #2d0964) fixed;
+    color: seashell;
+    font-family: "coolvetica rg",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ---^---^--------------------------------------------------------------------*/
+/* ---*---*------------Index top right entreprise-----------------------------*/
+/* -----()----- ----------------------------------------- -------------------*/
+
+
+header p:nth-child(1){
+text-align: end;
+width: auto;
+font-size: 0.8em;
+height: 30px;
+}
+
+p i{
+    margin-left: 5px;
+}
+
+/* ---^---^--------------------------------------------------------------------*/
+/* ---*---*------------Cadre de la page---------------------------------------*/
+/* -----()----- ----------------------------------------- -------------------*/
+
+
+.cadre{
+    margin: auto;
+    height: 865px;
+    border: rgba(255, 255, 255, 0.548) 1px solid;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.158);
+}
+.cadre:hover{
+    background-color: rgba(255, 255, 255, 0.281);
+    box-shadow:seashell 0 0 1em ;
+}
+/* ---^---^--------------------------------------------------------------------*/
+/* ---*---*------------Corps à l'intérieur du cadre---------------------------*/
+/* -----()----- ----------------------------------------- -------------------*/
+
+#bodyIndex{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+}
+
+h1{
+    text-align: center;
+    font-size: 4em;
+    align-self: flex-start;
+    margin-left: 50px;
+}
+#bodyIndex p{
+    font-size: 1.4em;
+}
+
+
+
+/* Mise en forme du bouton/link */
+
+.button{
+    text-decoration: none;
+    display: flex;
+    font-size: 1.3em;
+    padding: 0;
+    border-radius: 25px;
+    align-self: flex-end;
+    margin-top: 200px;
+    justify-content:space-evenly;
+}
+
+a{
+    text-decoration: none;
+    color: seashell;
+}
+nav p{
+    margin: 5px;
+}
+.button #join a{
+    display: block;
+    border-radius: 25px;
+    border: 1px solid #a970ff;
+    background-color: #a970ff ;
+    padding: 10px 35px 10px 25px;
+}
+
+.button #connect a{
+    color: #a970ff;
+    display: block;
+    border-radius: 25px;
+    border: 1px solid seashell;
+    background-color: seashell ;
+    padding: 10px 35px 10px 25px;
+}
+.button #join a:hover{
+    color: #a970ff;
+    background-color: seashell;
+    border: 1px solid rgba(169, 112, 255, 0.4);
+    box-shadow: #a970ff  inset 0 0 1em, seashell 0 0 1em ;
+}
+.button #connect a:hover{
+    color: rgb(255, 245, 238);
+    background-color: #a970ff;
+    border: 1px solid rgba(255, 245, 238, 0.4);
+    box-shadow: seashell  inset 0 0 1em, seashell 0 0 1em ;
+}
+a i{
+    position: absolute;
+    margin-left: 5px;
+}
+
+/* -------------------------------------------------^---^-----------------*/
+/* ---------Début de la seconde page----------------*---*----------------*/
+/* --------------------------------------------------()-----------------*/
+
+
+#askYou{
+    margin: auto;
+    width: 60%;
+    height: 700px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#askYou p{
+    word-wrap: break-word;
+    margin: 0;
+}
+
+#askYou p:nth-child(1){
+    animation: pop1 2s ease;
+}
+#askYou p:nth-child(2){
+    animation: pop2 6s ease;
+}
+#askYou p:nth-child(3){
+    animation: pop2 9s ease;
+}
+#askYou p:nth-child(4){
+    animation: pop2 16s ease;
+}
+
+#askYou p:nth-child(2n+2){
+    align-self: flex-end;
+}
+
+#askYou p:nth-child(4) a{
+    display: block;
+    text-align: center;
+    border-radius: 25px;
+    border: 1px solid #a970ff;
+    padding: 5px 10px;
+    background-color: #a970ff;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+#askYou p:nth-child(4) a:hover{
+    color: #a970ff;
+    border: 1px solid rgba(169, 112, 255, 0.4);
+    background-color: #fff5ee;
+    box-shadow: #a970ff  inset 0 0 1em, #fff5ee 0 0 0.5em ;
+    border-radius: 25px;
+    padding: 5px 10px;
+    margin-left: 5px;
+}
+
+/* Animations des paragraphes qui pop */
+@keyframes pop1{
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes pop2{
+    from {
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/* -----------------------------------------------------()-----------------*/
+/* ---------Début de la Troisième page----------------*---*---------------*/
+/* ---------------------------------------------------^---^--------------*/
+
+.cadre2{
+    margin: auto;
+    width: 60%;
+    height: 100%;
+    border: rgba(255, 255, 255, 0.548) 1px solid;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.158);
+}
+.cadre2:hover{
+    background-color: rgba(255, 255, 255, 0.281);
+    box-shadow:seashell 0 0 1em ;
+}
+
+h2{
+    margin: 20px auto 10px auto;
+    width: 40%;
+    word-wrap: break-word;
+    text-align: center;
+    font-weight: lighter;
+}
+form{
+    width: 80%;
+    margin: auto;
+}
+
+form div{
+    margin: 0 auto 10px auto;
+}
+.nomPrenom{
+    display: flex;
+    justify-content: space-around;
+}
+
+fieldset{
+    border: none;
+    margin: auto;
+
+    margin-bottom: 10px;
+    width: 80%;
+}
+input{
+    font-family: "coolvetica rg",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+input:focus{
+    color: #a970ff;
+}
